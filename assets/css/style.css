@@ -1,0 +1,373 @@
+html{
+    scroll-behavior: smoot;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+/*Variables.*/
+
+:root{
+    --normal-font: 400; 
+    --bold-font: 900; 
+    --bg-color: #c596ba; 
+    --primary-color: #edd9e0; 
+    --secondary-color: #e59abd; 
+    --primary-shadow: #edd9e0; 
+    --secondary-shadow: #e59abd;
+    --bottom-margin: 0.5rem; 
+    --bottom-margin-2: 1rem; 
+    --line-height: 1.7rem;
+    --transition: 0.3s;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-color); 
+}
+
+a:hover{
+    color: var(--secondary-color);
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem; 
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+}     
+
+nav h1{
+    color: var(--primary-color);
+}
+
+nav ul{
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li{
+    font-weight: var(--bold-font);
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem; /*rem referente a la medida de la fuente de mi contenedor*/
+    margin: auto;
+}
+
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.hero img{
+    height: 37.5rem;
+    width: 37.5rem;
+}
+
+.bio{
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px  15px 2px var(--primary-shadow);
+}
+
+.bio h2{
+    margin: var(--bottom-margin);
+    color: rgb(64, 63, 63);
+}
+
+.bio p{
+    line-height: var(--line-height);
+    padding: 0.3rem;
+    text-align: justify;
+}
+
+/*More about*/
+.more-about{
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+
+.more-about h2{
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+    color: rgb(64, 63, 63);
+}
+
+.more-about p{
+    line-height: var(--line-height);
+    padding: 0.4rem;
+    text-align: justify;
+    color: rgb(64, 63, 63);
+}
+
+/*skills section*/
+.skills{
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.skill-header{
+    margin-bottom: 1rem;
+    color: rgb(64, 63, 63);
+}
+
+.skills-wrapper img{
+    padding: 1.25rem;
+}
+
+.icon{
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card{
+    background-color: #fff;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    border-radius: 11px;
+    padding: 20px;
+    margin: 20px;
+}
+/*Project section*/
+
+/* Projects section */
+.projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 300px; /* O cualquier altura que necesites */
+    object-fit: cover; /* Asegura que se cubra el contenedor sin deformarse */
+  }
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: rgb(64, 63, 63);
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+  }
+  
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  /* Projects section ends */
+  
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+
+.sosicon{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+footer{
+    background-color: white;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    color: var(--secondary-color);
+}
+
+.scroll-up{
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+.up-arrow{
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Scroll to top button ends */
+
+/* Footer section */
+footer {
+    background-color: white;
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+  /* Footer section ends */
+  
+  /* General (utilities) */
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 720px) {
+    nav {
+      padding: 1.5rem 1rem;
+    }
+    nav ul {
+      position: fixed;
+      background-color: var(--bg-color);
+      flex-direction: column;
+      top: 86px;
+      left: 10%;
+      width: 80%;
+      text-align: center;
+      transform: translateX(120%);
+      transition: transform 0.5s ease-in;
+    }
+  
+    nav ul li {
+      margin: 8px;
+    }
+  
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ul.show {
+      transform: translateX(0);
+    }
+  
+    .hero {
+      margin-top: -4rem;
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .hero img {
+      height: 37.5rem;
+      width: 30rem;
+    }
+  
+    .bio {
+      margin-top: 2rem;
+      width: 20.5rem;
+    }
+  
+    .more-about {
+      margin-top: 2rem;
+      padding: 1rem 3.5rem;
+    }
+  
+    .more-about h2 {
+      text-align: center;
+    }
+  
+    .more-about p {
+      text-align: justify;
+    }
+  
+    .icon {
+      width: 5.875rem;
+      height: 5.25rem;
+    }
+  
+    .projects-container {
+      flex-direction: column;
+    }
+  
+    .project-container {
+      width: 20.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 23.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    .hero img {
+      height: 37.5rem;
+      width: 23rem;
+    }
+  
+    .bio {
+      width: 18.3rem;
+    }
+  
+    .project-container {
+      width: 17.875rem;
+    }
+  
+    .contact-form-container {
+      max-width: 17.75rem;
+    }
+  }
+
+
+  
+    
