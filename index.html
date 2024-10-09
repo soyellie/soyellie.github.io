@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <!--Animation-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+  
+    
+    <title>Portafolio | Ellie.</title>
+</head> 
+<body> 
+    <nav>
+        <h1>Elizabeth Hernández</h1> 
+        <!--Menú de navegación.-->
+
+        <ul class="navigation"> 
+            <li><a href="#about" class="nav-link">Sobre mí</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#projects" class="nav-link">Proyectos</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li> 
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars"name="menu-online"></ion-icon> 
+        </button>
+        
+    </nav>
+
+    <!--Hero-->
+    <section class="hero" id="about">
+        <img src="/assets/images/Imagen de WhatsApp 2024-09-30 a las 19.19.10_c25d8745.jpg" alt="" class="hero-img"> 
+        <div class="bio animate__animated animate__shakeX""> <!--Hacemos referencia  a la animación que queremos.-->
+            <h2 class="bio-title">Sobre mí.</h2> 
+            <p class="bio-text">Soy Elizabeth Hernández, una estudiante de informática con experiencia en el desarrollo de aplicaciones y diseño web. Me gusta enfrentar nuevos desafíos, aprender de forma autodidacta y colaborar en equipo para alcanzar soluciones prácticas y funcionales.</p> 
+
+        </div>  
+    </section> 
+
+    <!--More about-->
+    <section class="more-about">
+        <h2>Más acerca de mí.</h2>   
+        <p>Soy estudiante de noveno semestre de la Licenciatura en Informática en la Universidad Nacional Autónoma de México 🎓✨. Me apasiona la programación 🖥️💖. A lo largo de mi carrera, he adquirido experiencia en el desarrollo de páginas web utilizando HTML5, CSS, JavaScript y PHP 🌸💻. También tengo conocimiento en lenguajes como C++ y Java, que utilizo tanto para desarrollar aplicaciones de escritorio como móviles 📱🌟.
+        </p>
+        <br>
+        <p>Soy una persona perseverante y autodidacta 🌱📚, lo que significa que no me detengo hasta encontrar una solución o aprender algo nuevo 💪😊. Me encanta investigar por mi cuenta 🔍💕, pero también sé cuándo es necesario pedir ayuda 🙋‍♀️✨. Del mismo modo, disfruto colaborar y ofrecer mi apoyo a los demás en lo que pueda 🌷🤗, porque creo en el valor del trabajo en equipo 🤝✨. Mi responsabilidad y compromiso con mis tareas son esenciales para mí, y me esfuerzo por cumplir con excelencia en todo lo que hago 🌟📖, ya sea en el ámbito académico o laboral.
+        </p>
+        <br>
+        <p>Mi meta es seguir desarrollando mis habilidades tecnológicas y completar mi carrera 🎯💫, siempre comprometida con alcanzar mis objetivos y contribuir positivamente en cada proyecto en el que participo 🚀💖.
+        </p>   
+    </section>
+
+    <!--Skills section-->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">Mis mejores habilidades.</h2>
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card">
+
+                <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card">
+
+                <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card">
+
+
+            </div>
+            <div class="second-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card">
+
+                <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card">
+
+                <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card"> 
+
+            </div>
+        </div>     
+
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Algunos de mis proyectos recientes.</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <img src="assets/images/proy1.png" alt="Pinterest interface" loading="lazy" class="project-pic">
+                <h3 class="projects-title">Interfaz de Pinterest</h3>
+                <p class="project-details">Este proyecto es un clon de la interfaz de inicio de Pinterest, creado puramente con HTML5 y CSS3.</p>
+                <a href="https://clonpinterestbyellie.vercel.app/" target="_blank"><strong>Descúbrelo.</strong></a>   
+            </div>
+
+            <div class="project-container project-card">
+                <img src="assets/images/Ceratii.png" alt="Pinterest interface" loading="lazy" class="project-pic">
+                <h3 class="projects-title">Biografía</h3>
+                <p class="project-details">Esta página contiene la biografía de Gustavo Cerati, se construyó con HTML5 y CSS3.</p>
+                <a href="https://vercel.live/link/cerati-murex.vercel.app?via=project-dashboard-alias-list&p=1" target="_blank"><strong>Descúbrelo.</strong></a>   
+            </div>
+
+            <div class="project-container project-card">
+                <img src="assets/images/proy3.png" alt="Pinterest interface" loading="lazy" class="project-pic">
+                <h3 class="projects-title">Proyecto ISO con Bootstrap</h3>
+                <p class="project-details">Colaboré en el desarrollo de una página web informativa sobre la norma ISO, utilizando Bootstrap para un diseño responsivo y adaptable.</p>
+                <a href="https://vercel.live/link/fase5-jxxd.vercel.app?via=project-dashboard-alias-list&p=1" target="_blank"><strong>Descúbrelo.</strong></a>   
+            </div>
+
+        </div>
+    </section>
+    
+     <!--Redes-->
+     <div class="socials">
+        <a href="https://www.linkedin.com/in/elizabeth-hern%C3%A1ndez-hern%C3%A1ndez-b55138315/" target="_blank"><img src="assets/icons/linkedin.png" alt="LinkedIn" loading="lazy" class="sosicon"></a>
+
+        <a href="https://github.com/soyellie" target="_blank"><img src="assets/icons/github.png" alt="Github" loading="lazy" class="sosicon"></a>
+
+        <a href="https://www.instagram.com/soyellieyamoazoe/" target="_blank"><img src="assets/icons/instagram.png" alt="Instagram" loading="lazy" class="sosicon"></a>
+
+        <a href="https://wa.me/525586834731" target="_blank"><img src="assets/icons/whatsapp.png" alt="WhatsApp" loading="lazy" class="sosicon"></a>
+    </div>   
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up">
+        <img src="assets/icons/arrow_up.gif" class="socicon up-arrow" alt="scroll up"/>
+    </i>
+
+    <footer>
+        <p><strong>Construido con 🩷 por <a href="https://www.instagram.com/soyellieyamoazoe/" target="_blank">Elizabeth Hernández.</a></strong></p>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  
+</body>
+</html>
+
+
